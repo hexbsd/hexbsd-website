@@ -75,11 +75,11 @@ body {
 }
 
 .logo-hex {
-    color: var(--accent-primary);
+    color: var(--accent-secondary);
 }
 
 .logo-bsd {
-    color: var(--accent-primary);
+    color: var(--accent-secondary);
 }
 
 .logo-img {
