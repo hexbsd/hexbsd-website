@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexBSD - FreeBSD Server Management for macOS</title>
+    <meta name="description" content="A powerful macOS application for managing FreeBSD servers over SSH. Control ZFS, jails, packages, services, VMs, and more from a beautiful native interface.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="logo.png" alt="HexBSD" class="logo-img">
+                <span class="logo-hex">Hex</span><span class="logo-bsd">BSD</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="https://github.com/hexbsd/hexbsd" class="nav-github">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Native macOS Application</div>
+            <h1>Manage FreeBSD Servers<br><span class="gradient-text">with Elegance</span></h1>
+            <p class="hero-subtitle">A powerful, native macOS application for managing FreeBSD servers over SSH. Control ZFS pools, jails, packages, services, VMs, and more from a beautiful SwiftUI interface.</p>
+            <div class="hero-buttons">
+                <a href="https://github.com/hexbsd/hexbsd/releases" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download
+                </a>
+                <a href="https://github.com/hexbsd/hexbsd" class="btn btn-secondary">
+                    View Source
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="window-frame">
+                <div class="window-header">
+                    <div class="window-buttons">
+                        <span class="window-btn close"></span>
+                        <span class="window-btn minimize"></span>
+                        <span class="window-btn maximize"></span>
+                    </div>
+                    <span class="window-title">HexBSD</span>
+                </div>
+                <img src="https://github.com/user-attachments/assets/f7cf38e1-6929-4efd-8443-b2d2d4d4f31d" alt="HexBSD Screenshot" class="screenshot">
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything You Need</h2>
+                <p>Comprehensive FreeBSD server management from your Mac</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7c-2 0-3 1-3 3z"/>
+                            <path d="M8 12h8M12 8v8"/>
+                        </svg>
+                    </div>
+                    <h3>ZFS Management</h3>
+                    <p>Create, manage, and monitor ZFS pools and datasets. Snapshots, clones, and properties at your fingertips.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="7" height="7" rx="1"/>
+                            <rect x="14" y="3" width="7" height="7" rx="1"/>
+                            <rect x="3" y="14" width="7" height="7" rx="1"/>
+                            <rect x="14" y="14" width="7" height="7" rx="1"/>
+                        </svg>
+                    </div>
+                    <h3>Jail Management</h3>
+                    <p>Create, start, stop, and configure FreeBSD jails. Full control over jail networking and resource limits.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                        </svg>
+                    </div>
+                    <h3>Package Management</h3>
+                    <p>Install, update, and remove packages with pkg. Search repositories and manage dependencies easily.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                        </svg>
+                    </div>
+                    <h3>Service Control</h3>
+                    <p>Start, stop, restart, and enable services. View service status and manage rc.conf entries.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8m-4-4v4"/>
+                        </svg>
+                    </div>
+                    <h3>bhyve VMs</h3>
+                    <p>Manage bhyve virtual machines. Create, configure, and control VMs with integrated VNC viewer.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Boot Environments</h3>
+                    <p>Create and manage ZFS boot environments. Safe system updates with easy rollback capability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Users & Groups</h3>
+                    <p>Manage system users and groups. Create accounts, set permissions, and configure NIS domains.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Firewall Management</h3>
+                    <p>Configure PF firewall rules. Manage network security with an intuitive interface.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9m-9 9a9 9 0 0 1 9-9"/>
+                        </svg>
+                    </div>
+                    <h3>Network Configuration</h3>
+                    <p>Configure network interfaces, routing, and DNS. Visual network management made simple.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>Log Viewer</h3>
+                    <p>View, search, and download system logs. Real-time log monitoring with powerful filtering.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                        </svg>
+                    </div>
+                    <h3>File Browser</h3>
+                    <p>Browse remote filesystems with ease. Upload, download, and manage files over SFTP.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="4 17 10 11 4 5"/>
+                            <line x1="12" y1="19" x2="20" y2="19"/>
+                        </svg>
+                    </div>
+                    <h3>Integrated Terminal</h3>
+                    <p>Full-featured terminal emulator built-in. Drop to the command line whenever you need it.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Poudriere</h3>
+                    <p>Manage Poudriere build jails and ports trees. Monitor package builds in real-time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                            <line x1="12" y1="9" x2="12" y2="13"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>Security Auditing</h3>
+                    <p>Check for vulnerable packages and security advisories. Stay informed about potential threats.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h3>Real-time Monitoring</h3>
+                    <p>Monitor active connections and user sessions. Keep track of who's doing what on your servers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2>See It in Action</h2>
+                <p>A native macOS experience for FreeBSD administration</p>
+            </div>
+            <div class="screenshot-showcase">
+                <div class="window-frame large">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <span class="window-btn close"></span>
+                            <span class="window-btn minimize"></span>
+                            <span class="window-btn maximize"></span>
+                        </div>
+                        <span class="window-title">HexBSD</span>
+                    </div>
+                    <img src="https://github.com/user-attachments/assets/f7cf38e1-6929-4efd-8443-b2d2d4d4f31d" alt="HexBSD Main Interface" class="screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack">
+        <div class="container">
+            <div class="tech-content">
+                <h2>Built with Modern Technology</h2>
+                <p>HexBSD is a native macOS application built with SwiftUI, leveraging powerful open-source libraries for SSH connectivity and terminal emulation.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">SwiftUI</span>
+                    <span class="tech-badge">Citadel SSH</span>
+                    <span class="tech-badge">SwiftTerm</span>
+                    <span class="tech-badge">BSD Licensed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Take Control?</h2>
+            <p>Download HexBSD and start managing your FreeBSD servers the right way.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/hexbsd/hexbsd/releases" class="btn btn-primary btn-large">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download for macOS
+                </a>
+                <a href="https://github.com/hexbsd/hexbsd" class="btn btn-outline btn-large">
+                    Star on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="HexBSD" class="logo-img">
+                    <span class="logo-hex">Hex</span><span class="logo-bsd">BSD</span>
+                </div>
+                <p>BSD 2-Clause License</p>
+                <div class="footer-links">
+                    <a href="https://github.com/hexbsd/hexbsd">GitHub</a>
+                    <a href="https://github.com/hexbsd/hexbsd/issues">Issues</a>
+                    <a href="https://github.com/hexbsd/hexbsd/releases">Releases</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
