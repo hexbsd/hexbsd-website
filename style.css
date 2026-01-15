@@ -79,7 +79,7 @@ body {
 }
 
 .logo-bsd {
-    color: var(--text-primary);
+    color: var(--accent-primary);
 }
 
 .logo-img {
